@@ -1,1 +1,3 @@
 # Pip - dependências
+Flask==3.0.3
+marshmallow==3.23.1
