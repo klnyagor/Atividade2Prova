@@ -56,11 +56,11 @@ A validação é feita de modo automático (pela própria biblioteca) ou persona
 ### 2. POST /relatorio
 Adiciona um novo relatório
 - segue o mesmo padrão de cadastro de aluno
-> receber request
-> carregar schema
-> converter dados
-> ativar método de cadastro
-> validar campos
+> 1. receber request
+> 2. carregar schema
+> 3. converter dados
+> 4. ativar método de cadastro
+> 5. validar campos
 
 ## Persistencia dos dados
 `alunos = []`
