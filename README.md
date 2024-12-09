@@ -28,25 +28,33 @@
 ### 1. POST /aluno
 Adiciona um novo aluno
 - carrega os dados recebidos da request HTTP(recurso: .json) e converte os dados em uma instacia de classe de acordo com o schema fornecido
+
 > request_data = request.json
+
+```
 {
     "idade": 28,
     "disciplina": "Programação para a Web II"
 }
+````
+
 > .load(request_data)
+
 ```
     # AlunoSchema(28, "Programação para a Web II")
 ```
 
-- converte os dados do schema em uma string JSON e então cadastra o novo aluno
+ converte os dados do schema em uma string JSON e então cadastra o novo aluno
 > dupms(result)
 ```
     dumps(alunoSchema) # '{"idade": 28, "disciplina": "Programação para a Web II"}'
 ```
 > def cadastrarAluno(json_str: str):
+
 recebe uma string JSON, converte para um formato Python e adiciona na lista `alunos = []`
 
 > ValidationError
+
 Utiliza o método da biblioteca marshmallow para validar as informações cadastradas e lançar exceção caso ocorra
 - Uma exceção ocorre quando os dados para o schema não cumprem os requisitos definidos em seus campos
 -- campos ausentes
@@ -64,6 +72,7 @@ Adiciona um novo relatório
 
 ## Persistencia dos dados
 `alunos = []`
+
 `relatorio = []`
 
 - persistidos localmente durante execução do código e perdidos após finalização
