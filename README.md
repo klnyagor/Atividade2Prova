@@ -69,6 +69,7 @@ Adiciona um novo relatório
 > 3. converter dados
 > 4. ativar método de cadastro
 > 5. validar campos
+> 6. Adicionar novo cadastro ou lançar exceção 
 
 ## Persistencia dos dados
 `alunos = []`
